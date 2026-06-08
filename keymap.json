@@ -1,0 +1,21 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-alt-shift-u": "pane::ActivatePreviousItem",
+      "ctrl-alt-shift-o": "pane::ActivateNextItem",
+      "ctrl-alt-shift-[": "pane::SplitRight",
+      "ctrl-alt-shift-]": "pane::CloseActiveItem",
+      "ctrl-alt-shift-y": "pane::CloseActiveItem",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-alt-shift-j": "editor::MoveLeft",
+      "ctrl-alt-shift-l": "editor::MoveRight",
+      "ctrl-alt-shift-i": "editor::MoveUp",
+      "ctrl-alt-shift-k": "editor::MoveDown",
+    },
+  },
+]

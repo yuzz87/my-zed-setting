@@ -15,7 +15,8 @@
       "ctrl-cmd-shift-]": "pane::CloseActiveItem",
 
       "ctrl-alt-shift-y": "pane::CloseActiveItem",
-      "ctrl-cmd-shift-y": "pane::CloseActiveItem"
+      "ctrl-cmd-shift-y": "pane::CloseActiveItem",
+      "ctrl-@": "terminal_panel::ToggleFocus"
     }
   },
   {

@@ -15,6 +15,7 @@
   },
 
   "base_keymap": "VSCode",
+  "vim_mode": false,
 
   "theme": {
     "mode": "dark",
@@ -27,6 +28,21 @@
     "light": "Zed (Default)",
     "dark": "Material Icon Theme",
   },
+
+  "current_line_highlight": "all",
+
+  "scrollbar": {
+    "show": "always",
+    "axes": {
+      "vertical": true,
+      "horizontal": true,
+    },
+    "diagnostics": "all",
+    "search_results": true,
+    "selected_text": true,
+    "selected_symbol": true,
+  },
+
   "minimap": {
     "show": "always",
     "thumb": "always",
@@ -52,7 +68,7 @@
   },
 
   "status_bar": {
-    "experimental.show": false,
+    "experimental.show": true,
   },
 
   "colorize_brackets": true,
@@ -62,7 +78,7 @@
   "indent_guides": {
     "enabled": true,
     "line_width": 1,
-    "active_line_width": 1,
+    "active_line_width": 2,
     "coloring": "indent_aware",
   },
 

@@ -27,6 +27,11 @@
     "light": "Zed (Default)",
     "dark": "Material Icon Theme",
   },
+  "minimap": {
+    "show": "always",
+    "thumb": "always",
+    "thumb_border": "full",
+  },
 
   "project_panel": {
     "dock": "right",

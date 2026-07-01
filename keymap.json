@@ -5,6 +5,9 @@
       "ctrl-alt-shift-u": "pane::ActivatePreviousItem",
       "ctrl-cmd-shift-u": "pane::ActivatePreviousItem",
 
+      "ctrl-alt-shift-i": "pane::CloseActiveItem",
+      "ctrl-cmd-shift-i": "pane::CloseActiveItem",
+
       "ctrl-alt-shift-o": "pane::ActivateNextItem",
       "ctrl-cmd-shift-o": "pane::ActivateNextItem",
 
@@ -16,23 +19,53 @@
 
       "ctrl-alt-shift-y": "pane::CloseActiveItem",
       "ctrl-cmd-shift-y": "pane::CloseActiveItem",
-      "ctrl-@": "terminal_panel::Toggle"
-    }
+
+      "ctrl-@": "terminal_panel::Toggle",
+
+      "ctrl-alt-shift-q": "project_panel::ToggleFocus",
+      "ctrl-cmd-shift-q": "project_panel::ToggleFocus",
+      "ctrl-shift-q": "project_panel::Toggle",
+
+      "ctrl-alt-shift-a": "outline_panel::ToggleFocus",
+      "ctrl-cmd-shift-a": "outline_panel::ToggleFocus",
+      "ctrl-shift-a": "outline_panel::Toggle",
+
+      "ctrl-shift-alt-space": "workspace::ToggleVimMode",
+    },
   },
   {
     "context": "Editor",
     "bindings": {
-      "ctrl-alt-shift-j": "editor::MoveLeft",
-      "ctrl-cmd-shift-j": "editor::MoveLeft",
+      "ctrl-alt-shift-m": "editor::ToggleMinimap",
+      "ctrl-cmd-shift-m": "editor::ToggleMinimap",
+    },
+  },
 
-      "ctrl-alt-shift-l": "editor::MoveRight",
-      "ctrl-cmd-shift-l": "editor::MoveRight",
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "j": "menu::SelectNext",
+      "k": "menu::SelectPrevious",
+      "h": "project_panel::CollapseSelectedEntry",
+      "l": "project_panel::ExpandSelectedEntry",
+      "enter": "project_panel::Open",
+      "shift-enter": "project_panel::Rename",
+    },
+  },
 
-      "ctrl-alt-shift-i": "editor::MoveUp",
-      "ctrl-cmd-shift-i": "editor::MoveUp",
+  {
+    "context": "OutlinePanel",
+    "bindings": {
+      "escape": "menu::Cancel",
+    },
+  },
 
-      "ctrl-alt-shift-k": "editor::MoveDown",
-      "ctrl-cmd-shift-k": "editor::MoveDown"
-    }
-  }
+  {
+    "context": "OutlinePanel && not_editing",
+    "bindings": {
+      "j": "menu::SelectNext",
+      "k": "menu::SelectPrevious",
+      "enter": "outline_panel::OpenSelectedEntry",
+    },
+  },
 ]

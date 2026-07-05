@@ -1,0 +1,119 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-alt-shift-u": "pane::ActivatePreviousItem",
+      "ctrl-cmd-shift-u": "pane::ActivatePreviousItem",
+
+      "ctrl-alt-shift-i": "pane::CloseActiveItem",
+      "ctrl-cmd-shift-i": "pane::CloseActiveItem",
+
+      "ctrl-alt-shift-o": "pane::ActivateNextItem",
+      "ctrl-cmd-shift-o": "pane::ActivateNextItem",
+
+      "ctrl-alt-shift-[": "pane::SplitRight",
+      "ctrl-cmd-shift-[": "pane::SplitRight",
+
+      "ctrl-alt-shift-]": "pane::CloseActiveItem",
+      "ctrl-cmd-shift-]": "pane::CloseActiveItem",
+
+      "ctrl-alt-shift-y": "pane::CloseActiveItem",
+      "ctrl-cmd-shift-y": "pane::CloseActiveItem",
+
+      "ctrl-@": "terminal_panel::Toggle",
+
+      "ctrl-alt-shift-q": "project_panel::ToggleFocus",
+      "ctrl-cmd-shift-q": "project_panel::ToggleFocus",
+      "ctrl-shift-q": "project_panel::Toggle",
+
+      "ctrl-alt-shift-a": "outline_panel::ToggleFocus",
+      "ctrl-cmd-shift-a": "outline_panel::ToggleFocus",
+      "ctrl-shift-a": "outline_panel::Toggle",
+
+      "ctrl-shift-alt-space": "workspace::ToggleVimMode"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-alt-shift-m": "editor::ToggleMinimap",
+      "ctrl-cmd-shift-m": "editor::ToggleMinimap"
+    }
+  },
+
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "j": "menu::SelectNext",
+      "k": "menu::SelectPrevious",
+      "h": "project_panel::CollapseSelectedEntry",
+      "l": "project_panel::ExpandSelectedEntry",
+      "enter": "project_panel::Open",
+      "shift-enter": "project_panel::Rename"
+    }
+  },
+
+  {
+    "context": "OutlinePanel",
+    "bindings": {
+      "escape": "menu::Cancel"
+    }
+  },
+
+  {
+    "context": "OutlinePanel && not_editing",
+    "bindings": {
+      "j": "menu::SelectNext",
+      "k": "menu::SelectPrevious",
+      "enter": "outline_panel::OpenSelectedEntry"
+    }
+  },
+  {
+    "context": "!AcpThread > Editor && mode == full",
+    "unbind": {
+      "ctrl-shift-e": "pane::RevealInProjectPanel"
+    }
+  },
+  {
+    "context": "AgentPanel",
+    "unbind": {
+      "ctrl-shift-e": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "SettingsWindow",
+    "unbind": {
+      "ctrl-shift-e": "settings_editor::ToggleFocusNav"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-shift-e": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-space": "editor::ShowCompletions"
+    }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-i": "editor::ShowSignatureHelp"
+    }
+  },
+  {
+    "context": "Editor && !edit_prediction",
+    "bindings": {
+      "alt-l": "editor::ShowEditPrediction"
+    }
+  },
+  {
+    "context": "Editor && !edit_prediction",
+    "unbind": {
+      "alt-\\": "editor::ShowEditPrediction"
+    }
+  }
+]

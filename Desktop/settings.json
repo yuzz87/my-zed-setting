@@ -1,0 +1,195 @@
+// Zed settings
+{
+  "agent": {
+    "profiles": {
+      "editer-permisson": {
+        "name": "editer-permisson",
+        "tools": {
+          "write_file": true,
+          "skill": true,
+          "read_file": true,
+          "move_path": true,
+          "list_directory": true,
+          "grep": true,
+          "find_path": true,
+          "edit_file": true,
+          "diagnostics": true,
+          "create_directory": true,
+          "copy_path": false
+        },
+        "enable_all_context_servers": false,
+        "context_servers": {},
+        "default_model": {
+          "provider": "openai-subscribed",
+          "model": "gpt-5.5",
+          "enable_thinking": true,
+          "effort": "medium"
+        }
+      }
+    },
+    "default_profile": "editer-permisson",
+    "default_model": {
+      "provider": "openai-subscribed",
+      "model": "gpt-5.5",
+      "enable_thinking": true,
+      "effort": "medium"
+    },
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "session": {
+    "trust_all_worktrees": true
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+    "anthropic_retention": false
+  },
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always"
+          }
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always"
+          }
+        }
+      },
+      "enable_lsp_tasks": true
+    }
+  },
+  "cli_default_open_behavior": "existing_window",
+
+  "agent_servers": {
+    "claude-acp": {
+      "default_config_options": {
+        "effort": "xhigh",
+        "mode": "bypassPermissions"
+      },
+      "type": "registry"
+    },
+    "codex-acp": {
+      "default_config_options": {
+        "model": "gpt-5.5",
+        "mode": "agent-full-access",
+        "reasoning_effort": "xhigh"
+      },
+      "type": "registry"
+    }
+  },
+
+  "base_keymap": "VSCode",
+  "vim_mode": false,
+
+  "theme": {
+    "mode": "light",
+    "light": "Kanagawa Wave - No Italics",
+    "dark": "Tokyo Night Storm"
+  },
+  "theme_overrides": {
+    "Kanagawa Wave - No Italics": {
+      "tab.active_background": "#76946A80",
+      "border": "#80808080",
+      "background.appearance": "transparent", //transparent,blurred
+      "background": "#00000000", //完全透明
+      "editor.background": "#1A1B26E6", //1A1B2600,1A1B2680,1A1B2699,1A1B26CC,1A1B26D9,1A1B26E6
+      "panel.background": "#302833"
+    },
+    "Tokyo Night Storm": {
+      "tab.active_background": "#76946A80",
+      "border": "#165E83",
+      "border.variant": "#76946A80"
+    }
+  },
+  "icon_theme": {
+    "mode": "light",
+    "light": "Material Icon Theme",
+    "dark": "Material Icon Theme"
+  },
+
+  "tabs": {
+    "file_icons": true,
+    "git_status": true,
+    "show_close_button": "always",
+    "show_diagnostics": "all"
+  },
+
+  "current_line_highlight": "all",
+  "soft_wrap": "editor_width",
+  "scrollbar": {
+    "show": "never",
+    "axes": {
+      "vertical": true,
+      "horizontal": true
+    },
+    "diagnostics": "all",
+    "search_results": true,
+    "selected_text": true,
+    "selected_symbol": true
+  },
+
+  "minimap": {
+    "show": "never",
+    "thumb": "always",
+    "thumb_border": "full"
+  },
+
+  "project_panel": {
+    "dock": "right",
+    "auto_fold_dirs": false,
+    "indent_size": 10,
+    "indent_guides": {
+      "show": "always"
+    },
+    "sort_mode": "directories_first",
+    "file_icons": true,
+    "folder_icons": true,
+    "git_status": true,
+    "entry_spacing": "comfortable"
+  },
+
+  "preview_tabs": {
+    "enabled": false
+  },
+
+  "status_bar": {
+    "experimental.show": true
+  },
+
+  "colorize_brackets": true,
+  "code_lens": "on",
+
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+      "update_debounce_ms": 150,
+      "padding": 4,
+      "min_column": 80,
+      "max_severity": "warning"
+    }
+  },
+
+  "show_whitespaces": "boundary",
+
+  "indent_guides": {
+    "enabled": true,
+    "line_width": 1,
+    "active_line_width": 1,
+    "coloring": "indent_aware"
+  },
+
+  "ui_font_size": 16,
+  "buffer_font_size": 14,
+  "agent_ui_font_size": 16,
+  "agent_buffer_font_size": 16,
+
+  "show_edit_predictions": false, //ai補間勝手に表示させない
+  "edit_predictions": {
+    "provider": "zed",
+    "mode": "eager"
+  }
+}

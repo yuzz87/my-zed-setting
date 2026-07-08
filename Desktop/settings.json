@@ -92,6 +92,22 @@
   },
   "theme_overrides": {
     "Kanagawa Wave - No Italics": {
+      "players": [
+        {
+          "selection": "#76946A80"
+        }
+      ],
+      "element.hover": "#76946A80",
+      "element.active": "#76946A80",
+      "element.selected": "#76946A80",
+
+      "search.match_background": "#DCA56166",
+
+      "editor.active_line.background": "#76946A40",
+      "editor.highlighted_line.background": "#76946A40",
+      "editor.document_highlight.read_background": "#76946A40",
+      "editor.document_highlight.write_background": "#76946A60",
+
       "tab.active_background": "#76946A80",
       "border": "#80808080",
       "background.appearance": "transparent", //transparent,blurred
@@ -165,7 +181,7 @@
 
   "diagnostics": {
     "inline": {
-      "enabled": true,
+      "enabled": false,
       "update_debounce_ms": 150,
       "padding": 4,
       "min_column": 80,
@@ -184,7 +200,7 @@
 
   "ui_font_size": 16,
   "buffer_font_size": 14,
-  "agent_ui_font_size": 16,
+  "agent_ui_font_size": 18,
   "agent_buffer_font_size": 16,
 
   "show_edit_predictions": false, //ai補間勝手に表示させない
